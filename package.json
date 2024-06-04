@@ -1,10 +1,41 @@
 {
   "name": "jshow-devops",
-  "version": "0.0.1",
+  "license": "MIT",
+  "description": "jShow's devops tools",
+  "homepage": "https://github.com/j-show/devops",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-show/devops.git"
+  },
+  "bugs": {
+    "url": "https://github.com/j-show/devops/issues"
+  },
   "private": true,
-  "scripts": {},
   "workspaces": [
     "packages/*"
   ],
-  "devDependencies": {}
+  "engines": {
+    "pnpm": ">=8"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "precommit": "lint-staged",
+    "clean": "rm -rf ./dist && rm -rf ./packages/**/dist"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.11.5",
+    "chalk": "^4.1.0",
+    "execa": "^4.0.2",
+    "eslint": "^8",
+    "eslint-config-jshow": "latest",
+    "typescript-eslint": "latest",
+    "fs-extra": "^11.2.0",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "prettier": ">=3",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  }
 }

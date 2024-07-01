@@ -1,7 +1,19 @@
 {
   "name": "@jshow/monorepo",
   "version": "1.0.1",
+  "description": "Monorepo scripts and tools for jShow",
   "license": "MIT",
+  "main": "./dist/index.js",
+  "bin": {},
+  "files": [
+    "dist",
+    "templates"
+  ],
   "scripts": {},
-  "devDependencies": {}
+  "dependencies": {
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/yargs": "^17.0.32"
+  }
 }

@@ -1,26 +1,11 @@
 {
-  "name": "jshow-devops",
-  "license": "MIT",
-  "description": "Devops tools for jShow",
-  "homepage": "https://github.com/j-show/devops",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/j-show/devops.git"
-  },
-  "bugs": {
-    "url": "https://github.com/j-show/devops/issues"
-  },
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "engines": {
     "pnpm": ">=8"
   },
   "scripts": {
     "prepare": "husky install",
-    "precommit": "lint-staged",
-    "clean": "rm -rf ./dist && rm -rf ./packages/**/dist"
+    "precommit": "lint-staged"
   },
   "devDependencies": {
     "@types/node": "^20.11.5",
